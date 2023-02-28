@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="name">
+        {{name}}
+        <div
+          class="other otherName"
+          v-bind:id="count"
+          style="color: #333; font-size: 20px"
+          @click="test"
+        >
+          other
+        </div>
+        <input type="text" v-model="name" />
+      </div>
+      <div class="count" @click="handleClick">{{count}}</div>
+      <div>{{fullName}}</div>
+      <div>{{fullName2}}</div>
+      <div>{{fullName3}}</div>
+      <select name="type" v-model="selected">
+        <option value="a">aaa</option>
+        <option value="b">bbb</option>
+        <option value="c">ccc</option>
+      </select>
+    </div>
+  </body>
+</html>
